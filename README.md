@@ -1,1 +1,1 @@
-My favorite drink is Dr. Pepper
+This is the repository for ASWF programming class.
