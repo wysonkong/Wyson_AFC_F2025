@@ -8,12 +8,12 @@
 <body>
 <nav>
     <ul class="no_bullet">
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="Menu.html">Menu</a></li>
-        <li><a href="Hiring.html">Now Hiring</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="hiring.html">Now Hiring</a></li>
     </ul>
 </nav>
-<form action="submit" method="post">
+<form action="" method="post">
     <fieldset>
         <legend>Hiring Form</legend>
         <label for="first">First Name:</label>
@@ -43,7 +43,7 @@
             <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
         <div class="email">
         <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" list="email_domains" required>
+            <input type="email" id="email" name="email" list="email_domains" placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 <datalist id="email_domains">
                     <option value="@gmail.com">
                     <option value="@outlook.com">
