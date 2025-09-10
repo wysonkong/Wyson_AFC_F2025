@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nomad Meal Menu</title>
+    <script src="https://kit.fontawesome.com/595ea8a5bd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
@@ -18,59 +19,59 @@
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="../index.html">
+                        <i class="fa-notdog fa-solid fa-house" style="color: #74C0FC;"></i>
+                        Home
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
+                    <a class="nav-link" href="menu.html">
+                        <i class="fa-solid fa-bars" style="color: #74C0FC;"></i>
+                        Menu
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="hiring.html">Hiring</a>
+                    <a class="nav-link" href="hiring.html">
+                        <i class="fa-notdog fa-solid fa-inbox" style="color: #74C0FC;"></i>
+                        Hiring
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="menu">
-    <h1 style="text-align: left">Nomad Meals Menu</h1>
-    <table>
-        <tr class="menu_items">
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Spice Bowl</td>
-            <td>Roasted chickpeas, couscous, roasted vegetables, and a smoky chipotle drizzle, topped with fresh cilantro and toasted almonds</td>
-            <td>$14.45</td>
-        </tr>
-        <tr>
-            <td>Skewers</td>
-            <td>Grilled marinated skewers with a blend of exotic spices, served with saffron rice and a cooling yogurt-mint sauce. (Choice of chicken, lamb, beef)</td>
-            <td>$18.75</td>
-        </tr>
-        <tr>
-            <td>Mediterranean Flatbread</td>
-            <td>Crispy flatbread topped with sun-dried tomatoes, olives, feta, caramelized onions, and a drizzle of lemon-tahini sauce</td>
-            <td>$12.25</td>
-        </tr>
-        <tr>
-            <td>Hummus Trio</td>
-            <td>Three seasonal hummus varieties served with warm pita and crunchy vegetable sticks.</td>
-            <td>19.75</td>
-        </tr>
-        <tr>
-            <td>Latte Pudding</td>
-            <td>Pudding with a sprinkle of cinnamon and topped with toasted coconut</td>
-            <td>$6.50</td>
-        </tr>
-    </table>
+
+<div class="landing">
+    <img src="../img/mascot.png" alt="mascot" id="mascot">
+
+    <div id="menu">
+        <table id="menu_carousel">
+            <thead>
+            <tr class="menu_items">
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><h2 id="menu_name"></h2></td>
+                <td><p id="menu_desc"></p></td>
+                <td><p id="menu_price"></p></td>
+            </tr>
+            </tbody>
+
+        </table>
+        <div class="button_container">
+            <button id="nextButton">Next</button>
+            <button id="prevButton">Prev</button>
+        </div>
+    </div>
 </div>
-<footer>
-    <p>Footer</p>
-</footer>
+
 
 <script src="../JavaScript/Bootstrap/bootstrap.bundle.min.js"></script>
-<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/scriptMenu.js"></script>
 
 </body>
 </html>
