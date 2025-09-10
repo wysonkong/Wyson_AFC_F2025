@@ -1,0 +1,67 @@
+#form {
+    border-radius: 10px;
+    border: 20px;
+    background-color: #9ec5fe;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+}
+
+#hire_form {
+    justify-content: center;
+}
+
+#chef {
+    display: grid;
+    justify-content: flex-start;
+    align-content: end;
+}
+
+#mascot {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-image: url('../img/malaysian-food.jpg');
+    background-size: cover;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    padding: 1rem;
+    min-width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+#menu_carousel {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+#menu_carousel th, #menu_carousel td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
