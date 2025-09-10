@@ -1,4 +1,4 @@
-// script.js
+// scriptHiring.js
 // Name: Wyson Kong
 // Task9 - Weekday Detector
 

@@ -1,4 +1,4 @@
-// script.js
+// scriptHiring.js
 // Name: Wyson Kong
 // Lab1 - Dynamic Age Calculator
 

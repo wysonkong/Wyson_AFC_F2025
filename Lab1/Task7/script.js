@@ -1,4 +1,4 @@
-// script.js
+// scriptHiring.js
 // Name: Wyson
 // Task7 - Grade Classification
 

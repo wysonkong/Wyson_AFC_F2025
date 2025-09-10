@@ -1,4 +1,4 @@
-// script.js
+// scriptHiring.js
 // Name: Wyson Kong
 // Task10 - How Long Until Graduation
 
