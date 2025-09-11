@@ -1,3 +1,4 @@
+/*Navbar color complements the green giving it vibrant pop to the page that will attract the users eyes to always find the nav menu*/
 .custom-navbar-color {
     background-color: #B8332A;
 }
@@ -47,6 +48,7 @@
     background-size: cover;
 }
 
+/*Menu background color was to complement the greens in the background while still making it pop*/
 #menu {
     display: flex;
     flex-direction: column;
@@ -57,6 +59,7 @@
     max-width: 600px;
     border-radius: 10px;
 }
+
 
 #menu_carousel {
     width: 100%;
@@ -79,6 +82,7 @@
     max-height: 50vh;
     max-width: 50vw;
 }
+
 
 footer {
     background-color: #FFF2E6;
