@@ -1,4 +1,3 @@
-// let choice = prompt("Enter your Palindrome");
 
 function isPalindrome(choice) {
     if(typeof choice !== "string") {
@@ -20,5 +19,6 @@ function isPalindrome(choice) {
     return true;
 
 }
+
 
 module.exports = isPalindrome;
