@@ -1,27 +1,27 @@
-let isPalindrome = require('../src/isPalindrome');
+const isPalindrome = require('../src/isPalindrome');
 
 
 describe("isPalindrome", () => {
 
-        test("Palindrome should return true", () => {
-            expect(isPalindrome("racecar")).toBe(true);
-        });
+    test("Palindrome should return true", () => {
+        expect(isPalindrome("racecar")).toBe(true);
+    });
 
-        test("Should return true with punctation", () => {
-            expect(isPalindrome("MadamI'mAdam.")).toBe(true);
-        });
+    test("Should return true with punctation", () => {
+        expect(isPalindrome("MadamI'mAdam.")).toBe(true);
+    });
 
-        test("Should return true with punctation and spaces", () => {
-            expect(isPalindrome("Red rum, sir, is murder.")).toBe(true);
-        });
+    test("Should return true with punctation and spaces", () => {
+        expect(isPalindrome("Red rum, sir, is murder.")).toBe(true);
+    });
 
-        test("Should remove spaces and give true", () => {
-            expect(isPalindrome("m u m")).toBe(true);
-        });
-
+    test("Should remove spaces and give true", () => {
+        expect(isPalindrome("m u m")).toBe(true);
+    });
 });
 
 describe("Not Palindrome", () => {
+
     test("Not a string should return false", () => {
         expect(isPalindrome(2134)).toBe(false);
     });
