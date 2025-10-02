@@ -5,7 +5,6 @@ import flatbread from "../assets/flatbread.jpg"
 import pudding from "../assets/pudding.jpeg"
 import hummus from "../assets/hummus.jpeg"
 import background from "../assets/malaysian-food.jpg";
-import {Card} from "@material-tailwind/react";
 
 
 const menuItems = [

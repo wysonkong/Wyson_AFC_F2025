@@ -1,12 +1,7 @@
 import React from "react";
-import {Link, useNavigate} from 'react-router-dom';
-import HomePage from "./HomePage.jsx";
+import {Link} from 'react-router-dom';
 import background from "../assets/malaysian-food.jpg";
 
-const returnHome = () => {
-    const navigate = useNavigate();
-    navigate(HomePage);
-}
 
 const ErrorPage = () => {
     return (

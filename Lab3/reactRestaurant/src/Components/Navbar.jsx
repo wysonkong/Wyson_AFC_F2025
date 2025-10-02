@@ -1,17 +1,8 @@
 import { useState } from 'react';
 import {Link} from "react-router-dom";
 
-const Navigation = ({ currentPage, setCurrentPage }) => {
+const Navigation = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    const getButtonClass = () =>
-        `font-semibold text-white flex items-center space-x-2 px-3 py-2 rounded transition 'bg-green-700 hover:bg-green-800' : 'bg-transparent hover:bg-green-600'
-        }`;
-
-    const handlePageChange = (page) => {
-        setCurrentPage(page);
-        setMobileMenuOpen(false); // close mobile menu on navigation
-    };
 
     return (
         <header>

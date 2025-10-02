@@ -6,13 +6,9 @@ import HiringPage from "./Pages/HiringPage.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
 import './App.css'
 import {Route} from "react-router";
-import background from "./assets/malaysian-food.jpg";
 import {BrowserRouter as Router, Routes,} from "react-router-dom";
 
 const App = () => {
-    const [currentPage, setCurrentPage] = useState('home');
-
-
     return (
         <Router>
             <Navigation/>
