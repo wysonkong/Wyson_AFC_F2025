@@ -77,7 +77,7 @@ const MenuPage = () => {
                     <card>
                         <table>
                             <thead>
-                            <tr>
+                            <tr className="bg-green-800">
                                 {TABLE_HEAD.map((head) => (
                                     <th key={head} className="border-b border-blue-gray-100 p-4">
                                         {head}
@@ -91,7 +91,7 @@ const MenuPage = () => {
                                 const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
 
                                 return (
-                                    <tr key={name}>
+                                    <tr key={name} className="even:bg-orange-50/50">
                                         <td className={classes}>
                                             {name}
                                         </td>
