@@ -5,6 +5,7 @@ import flatbread from "../assets/flatbread.jpg"
 import pudding from "../assets/pudding.jpeg"
 import hummus from "../assets/hummus.jpeg"
 import background from "../assets/malaysian-food.jpg";
+import {Card} from "@material-tailwind/react";
 
 
 const menuItems = [
@@ -73,7 +74,7 @@ const MenuPage = () => {
         <div style={{ backgroundImage: `url(${background})` }} className="bg-no-repeat bg-center bg-cover h-screen flex items-center justify-center">
             <div className="bg-orange-100 p-6 rounded-lg shadow-lg max-w-2xl w-full">
                 <div className="text-center mb-4">
-                    <card>
+                    <Card>
                         <table>
                             <thead>
                             <tr>
@@ -105,7 +106,7 @@ const MenuPage = () => {
                             })}
                             </tbody>
                         </table>
-                    </card>
+                    </Card>
                 </div>
             </div>
 
