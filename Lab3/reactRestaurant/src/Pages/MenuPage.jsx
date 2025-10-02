@@ -74,7 +74,7 @@ const MenuPage = () => {
         <div style={{ backgroundImage: `url(${background})` }} className="bg-no-repeat bg-center bg-cover h-screen flex items-center justify-center">
             <div className="bg-orange-100 p-6 rounded-lg shadow-lg max-w-2xl w-full">
                 <div className="text-center mb-4">
-                    <Card>
+                    <card>
                         <table>
                             <thead>
                             <tr>
@@ -106,7 +106,7 @@ const MenuPage = () => {
                             })}
                             </tbody>
                         </table>
-                    </Card>
+                    </card>
                 </div>
             </div>
 
