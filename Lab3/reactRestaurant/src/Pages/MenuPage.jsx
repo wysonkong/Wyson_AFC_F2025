@@ -33,7 +33,7 @@ const menuItems = [
         name: "Latte Pudding",
         description:
             "Pudding with a sprinkle of cinnamon and topped with toasted coconut",
-        price: 6.5,
+        price: 6.50,
         image: pudding,
     },
     {
@@ -44,6 +44,8 @@ const menuItems = [
         image: hummus,
     },
 ];
+
+const TABLE_HEAD = ["Name", "Description", "Price"];
 
 
 
@@ -69,6 +71,44 @@ const MenuPage = () => {
 
     return (
         <div style={{ backgroundImage: `url(${background})` }} className="bg-no-repeat bg-center bg-cover h-screen flex items-center justify-center">
+            <div className="bg-orange-100 p-6 rounded-lg shadow-lg max-w-2xl w-full">
+                <div className="text-center mb-4">
+                    <card>
+                        <table>
+                            <thead>
+                            <tr>
+                                {TABLE_HEAD.map((head) => (
+                                    <th key={head} className="border-b border-blue-gray-100 p-4">
+                                        {head}
+                                    </th>
+                                ))}
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {menuItems.map(({ name, description, price }, index) => {
+                                const isLast = index === menuItems.length - 1;
+                                const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
+
+                                return (
+                                    <tr key={name}>
+                                        <td className={classes}>
+                                            {name}
+                                        </td>
+                                        <td className={classes}>
+                                            {description}
+                                        </td>
+                                        <td className={classes}>
+                                            {formatPrice(price)}
+                                        </td>
+                                    </tr>
+                                );
+                            })}
+                            </tbody>
+                        </table>
+                    </card>
+                </div>
+            </div>
+
             <div className="bg-orange-100 p-6 rounded-lg shadow-lg max-w-2xl w-full">
                 <div className="text-center mb-4">
                     <img
